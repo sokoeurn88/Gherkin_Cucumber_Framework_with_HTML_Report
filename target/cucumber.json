@@ -1,0 +1,124 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2796758000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Techfios login page",
+            "match": {
+              "location": "LoginStepDefinition.User_is_on_Techfios_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User should be able to login with valid credentials and open a new account",
+        "description": "",
+        "id": "techfios-other-login-functionality-validation-driving-data-from-mysql-database;user-should-be-able-to-login-with-valid-credentials-and-open-a-new-account",
+        "after": [
+          {
+            "result": {
+              "duration": 635916300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2282700,
+              "error_message": "java.lang.NullPointerException\r\n\tat steps.LoginStepDefinition.user_enter_from_mysql_database(LoginStepDefinition.java:55)\r\n\tat ✽.When User enter \"username\" from mysql database(features/LoginDataFromDB.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "User enter \"username\" from mysql database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepDefinition.user_enter_from_mysql_database(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User enter \"password\" from mysql database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepDefinition.user_enter_from_mysql_database(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User click on Signin button",
+            "match": {
+              "location": "LoginStepDefinition.user_click_on_Signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User should land on Dashboard page",
+            "match": {
+              "location": "LoginStepDefinition.user_should_land_on_Dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@DbScenario1"
+          }
+        ]
+      }
+    ],
+    "name": "Techfios other login functionality validation driving data from MySQL database",
+    "description": "",
+    "id": "techfios-other-login-functionality-validation-driving-data-from-mysql-database",
+    "keyword": "Feature",
+    "uri": "features/LoginDataFromDB.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@DbLogin"
+      }
+    ]
+  }
+]
